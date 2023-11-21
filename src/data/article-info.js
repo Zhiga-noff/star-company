@@ -1,6 +1,8 @@
+import { generateRandomId } from '../utils/random-id';
+
 export const articleInfo = [
   {
-    id: Math.random(),
+    id: generateRandomId(10),
     title:
       'Сведения о проведение специальной оценки условий труда в АО «ТО «Красная звезда» в 2023 году',
     datePublished: {
@@ -18,7 +20,7 @@ export const articleInfo = [
     },
   },
   {
-    id: Math.random(),
+    id: generateRandomId(10),
     title:
       'Сведения о проведение специальной оценки условий труда в АО «ТО «Красная звезда» в 2023 году',
     datePublished: {
@@ -36,7 +38,7 @@ export const articleInfo = [
     },
   },
   {
-    id: Math.random(),
+    id: generateRandomId(10),
     title:
       'Сведения о проведение специальной оценки условий труда в АО «ТО «Красная звезда» в 2023 году',
     datePublished: {
@@ -54,7 +56,7 @@ export const articleInfo = [
     },
   },
   {
-    id: Math.random(),
+    id: generateRandomId(10),
     title:
       'Сведения о проведение специальной оценки условий труда в АО «ТО «Красная звезда» в 2023 году',
     datePublished: {
@@ -72,7 +74,7 @@ export const articleInfo = [
     },
   },
   {
-    id: Math.random(),
+    id: generateRandomId(10),
     title:
       'Сведения о проведение специальной оценки условий труда в АО «ТО «Красная звезда» в 2023 году',
     datePublished: {
@@ -90,7 +92,7 @@ export const articleInfo = [
     },
   },
   {
-    id: Math.random(),
+    id: generateRandomId(10),
     title:
       'Сведения о проведение специальной оценки условий труда в АО «ТО «Красная звезда» в 2023 году',
     datePublished: {

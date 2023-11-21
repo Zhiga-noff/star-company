@@ -8,6 +8,7 @@ const BreadCrumbs = ({ pageURL }) => {
     if (pageURL === item.link) {
       return item;
     }
+    return item;
   });
 
   return (

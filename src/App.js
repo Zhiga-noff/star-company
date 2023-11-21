@@ -5,6 +5,7 @@ import { MainLayout } from './components/main-layout/MainLayout';
 import { AboutUs } from './pages/about-us/AboutUs';
 import { Contacts } from './pages/contacts/Contacts';
 import { Information } from './pages/information/Information';
+import { ArticlePage } from './pages/article-page/ArticlePage';
 
 function App() {
   return (
@@ -14,10 +15,10 @@ function App() {
         <Routes>
           <Route path={'/'} element={<AboutUs />} />
           <Route path={'/contacts'} element={<Contacts />} />
-          <Route path={'/information'} element={<Information />} />
-          <Route path={'/users'} element={<div>Пользователи</div>} />
-          <Route path={'/post'} element={<div>Новая статья</div>} />
-          <Route path={'/post/:post_id'} element={<div>Статья</div>} />
+          <Route path={'/information'}>
+            <Route index element={<Information />} />
+            <Route path={':id'} element={<ArticlePage />} />
+          </Route>
           <Route path={'*'} element={<div>Ошибка</div>} />
         </Routes>
       </MainLayout>

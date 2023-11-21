@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHref } from 'react-router-dom';
-import BreadCrumbs from '../breadcrumbs/BreadCrumbs';
 import { Societies } from '../societies/Societies';
+import BreadCrumbs from '../breadcrumbs/BreadCrumbs';
 
 export const MainLayout = ({ children }) => {
   const pageURL = useHref();
