@@ -1,0 +1,17 @@
+.footer {
+  margin-top: 20px;
+  max-width: 550px;
+
+  font-family: Arial;
+  font-size: 11px;
+
+  justify-self: flex-end !important;
+
+  p {
+    margin-bottom: 20px;
+
+    a {
+      color: rgb(85, 85, 85);
+    }
+  }
+}

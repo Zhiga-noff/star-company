@@ -1,0 +1,22 @@
+.nav {
+  background-image: -webkit-linear-gradient(top, #585858, #3d3d3d);
+  padding: 16px 0;
+
+  & a {
+    color: white;
+    padding: 15px;
+    transition-duration: 0.2s;
+
+    &:hover {
+      background-image: -webkit-linear-gradient(top, #808080, #363636);
+    }
+
+    abbr {
+      text-decoration: none;
+    }
+  }
+
+  & .active {
+    background-color: #343434;
+  }
+}

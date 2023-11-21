@@ -1,0 +1,28 @@
+.containerAside {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+
+  align-self: start;
+
+  font-family: Arial;
+
+  li {
+    list-style: disc !important;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: rgb(0, 102, 204);
+  }
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 23px;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
