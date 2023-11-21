@@ -1,6 +1,6 @@
 import React from 'react';
 import style from '../Global.module.scss';
-import { Map } from '../../map/Map';
+import { Map } from '../../components/map/Map';
 
 export const Contacts = () => {
   return (

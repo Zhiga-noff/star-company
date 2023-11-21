@@ -1,0 +1,57 @@
+.title {
+  margin: 13px 0;
+}
+
+.text {
+  margin: 22px 0;
+}
+
+.quotes {
+  margin: 22px 0;
+  border-left: 4px solid #d6d6d6;
+  padding: 22px 14px;
+  background-color: #f9f9f9;
+
+  p {
+    font-style: italic;
+  }
+}
+
+.mapContainer {
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.miniTitle {
+  font-size: 7px;
+  color: black;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.preview {
+  margin-bottom: 30px;
+}
+
+.description {
+  font-family: Arial;
+  color: rgb(159, 159, 159);
+  font-size: 12px;
+  margin-bottom: 10px;
+
+  a {
+    color: rgb(0, 102, 204);
+  }
+}
+
+.published {
+  font-family: Arial;
+
+  span {
+    font-weight: 700;
+  }
+
+  a {
+    color: #555555;
+  }
+}

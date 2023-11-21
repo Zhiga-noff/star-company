@@ -9,7 +9,7 @@ export const Societies = () => {
       <h2 className={style.subtitle}>Дочерние и зависимые общества</h2>
       <ul>
         {societiesConstant.map(({ text, link }) => (
-          <li>
+          <li key={text}>
             <Link to={link}>{text}</Link>
           </li>
         ))}
