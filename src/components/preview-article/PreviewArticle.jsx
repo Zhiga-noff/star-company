@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import style from '../../pages/Global.module.scss';
 
 export const PreviewArticle = ({ article }) => {
@@ -8,9 +8,10 @@ export const PreviewArticle = ({ article }) => {
   return (
     <>
       <div className={style.preview}>
-        <NavLink to={`${id}`}>
-          <h2 className={style.title}>{title}</h2>
-        </NavLink>
+        <h2 className={style.title}>
+          <Link to={`${id}`}>{title}</Link>
+        </h2>
+
         <p className={style.description}>
           Опубликовано <Link to={datePublished.link}>{datePublished.date}</Link> Автор:
           <Link to={author.link}> {author.name}</Link>
@@ -18,7 +19,21 @@ export const PreviewArticle = ({ article }) => {
         <p className={style.text}>{text}</p>
         <p className={style.published}>
           <span>Опубликовано в </span>
-          <Link to={forWhatPublished.link}>{forWhatPublished.place}</Link>
+          {forWhatPublished.map((item, index, array) => {
+            if (index === array.length - 1) {
+              return (
+                <Link key={id} to={item.link}>
+                  {item.place}
+                </Link>
+              );
+            }
+
+            return (
+              <Link key={id + index} to={item.link}>
+                {item.place},{' '}
+              </Link>
+            );
+          })}
         </p>
       </div>
     </>

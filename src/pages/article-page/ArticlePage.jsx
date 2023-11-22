@@ -26,7 +26,21 @@ export const ArticlePage = () => {
 
         <p className={style.published}>
           <span>Опубликовано в </span>
-          <Link to={forWhatPublished.link}>{forWhatPublished.place}</Link>
+          {forWhatPublished.map((item, index, array) => {
+            if (index === array.length - 1) {
+              return (
+                <Link key={id} to={item.link}>
+                  {item.place}
+                </Link>
+              );
+            }
+
+            return (
+              <Link key={id + index} to={item.link}>
+                {item.place},{' '}
+              </Link>
+            );
+          })}
         </p>
       </div>
     </>
