@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { articleInfo } from '../../data/article-info';
 import style from '../Global.module.scss';
+import { FileReport } from '../../components/file-report/FileReport';
 
 export const ArticlePage = () => {
   const { id: idParams } = useParams();
@@ -12,18 +13,20 @@ export const ArticlePage = () => {
     }
   });
 
-  const { title, datePublished, author, text, forWhatPublished, id } = article;
+  const { title, datePublished, author, text, forWhatPublished, file, id } = article;
 
   return (
     <>
       <div className={style.preview}>
-        <h2 className={style.title}>{title}</h2>
+        <h1 className={style.title}>{title}</h1>
         <p className={style.description}>
           Опубликовано <Link to={datePublished.link}>{datePublished.date}</Link> Автор:
           <Link to={author.link}> {author.name}</Link>
         </p>
         <p className={style.text}>{text}</p>
-
+        {file.map(({ fileURL, fileName }, index) => (
+          <FileReport key={id + id + index} fileName={fileName} fileURL={fileURL} />
+        ))}
         <p className={style.published}>
           <span>Опубликовано в </span>
           {forWhatPublished.map((item, index, array) => {

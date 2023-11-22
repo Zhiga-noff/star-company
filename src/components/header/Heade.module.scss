@@ -1,22 +1,107 @@
 .nav {
-  background-image: -webkit-linear-gradient(top, #585858, #3d3d3d);
-  padding: 16px 0;
+    background-image: -webkit-linear-gradient(top, #585858, #3d3d3d);
+    padding: 16px 0;
 
-  & a {
-    color: white;
-    padding: 15px;
-    transition-duration: 0.2s;
+    @media screen and (max-width: 650px) {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
 
-    &:hover {
-      background-image: -webkit-linear-gradient(top, #808080, #363636);
+        p {
+            color: white;
+            font-family: Arial;
+            font-weight: 700;
+        }
     }
 
-    abbr {
-      text-decoration: none;
-    }
-  }
+    & a {
+        color: white;
+        padding: 15px;
+        transition-duration: 0.2s;
 
-  & .active {
-    background-color: #343434;
-  }
+        &:hover {
+            background-image: -webkit-linear-gradient(top, #808080, #363636);
+        }
+
+        abbr {
+            text-decoration: none;
+        }
+    }
+
+    & .active {
+        background-color: #343434;
+    }
+}
+
+.burger {
+    z-index: 30;
+    position: relative;
+    width: 17px;
+    height: 30px;
+
+    &:before, &:after {
+        position: absolute;
+        content: '';
+        width: 17px;
+        height: 3px;
+        background-color: white;
+    }
+
+    &:before {
+        top: 7px;
+    }
+
+    &:after {
+        bottom: 8px;
+    }
+
+    span {
+        position: absolute;
+        width: 17px;
+        height: 3px;
+        background-color: white;
+        top: 13px;
+    }
+}
+
+@keyframes menuShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.menu {
+    @media screen and (max-width: 651px) {
+        display: none;
+
+        &.show {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            left: 0;
+            top: 30px;
+            background-color: white;
+            //opacity: 1;
+            animation: menuShow 0.3s;
+
+
+            & a {
+                line-height: 41px;
+                background-color: white;
+                color: #151515;
+                padding: 0 10px;
+                border-bottom: 1px solid #e5e5e5;
+                border-right: 1px solid #e5e5e5;
+                border-left: 1px solid #e5e5e5;
+            }
+        }
+    }
+
 }

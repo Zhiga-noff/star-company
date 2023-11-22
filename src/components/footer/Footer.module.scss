@@ -1,17 +1,21 @@
 .footer {
-  margin-top: 20px;
-  max-width: 550px;
+    margin-top: 20px;
+    max-width: 550px;
 
-  font-family: Arial;
-  font-size: 11px;
+    font-family: Arial;
+    font-size: 11px;
 
-  justify-self: flex-end !important;
-
-  p {
-    margin-bottom: 20px;
-
-    a {
-      color: rgb(85, 85, 85);
+    justify-self: flex-end !important;
+    @media screen and (max-width: 992px) {
+        text-align: center;
     }
-  }
+
+
+    p {
+        margin-bottom: 20px;
+
+        a {
+            color: rgb(85, 85, 85);
+        }
+    }
 }

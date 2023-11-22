@@ -1,6 +1,10 @@
 .title {
     margin: 13px 0;
 
+    @media screen and (max-width: 992px) {
+
+    }
+
     a {
         color: #151515;;
     }
@@ -16,6 +20,13 @@
     padding: 22px 14px;
     background-color: #f9f9f9;
 
+    @media screen and (max-width: 992px) {
+        p {
+            margin: 0;
+        }
+
+    }
+
     p {
         font-style: italic;
     }
@@ -24,6 +35,10 @@
 .mapContainer {
     max-width: 600px;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 992px) {
+        max-width: 100%;
+    }
 }
 
 .miniTitle {
@@ -50,6 +65,7 @@
 
 .published {
     font-family: Arial;
+    font-size: 12px;
 
     span {
         font-weight: 700;
@@ -57,5 +73,15 @@
 
     a {
         color: #555555;
+    }
+}
+
+.row {
+    display: flex;
+    color: rgb(0, 102, 204);
+    font-size: 14px;
+
+    img {
+        margin-right: 20px;
     }
 }

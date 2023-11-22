@@ -6,6 +6,7 @@ import { AboutUs } from './pages/about-us/AboutUs';
 import { Contacts } from './pages/contacts/Contacts';
 import { Information } from './pages/information/Information';
 import { ArticlePage } from './pages/article-page/ArticlePage';
+import { CompanyInfo } from './pages/company-info/CompanyInfo';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           <Route path={'/information'}>
             <Route index element={<Information />} />
             <Route path={':id'} element={<ArticlePage />} />
+          </Route>
+          <Route path={'/company'}>
+            <Route path={':id'} element={<CompanyInfo />} />
           </Route>
           <Route path={'*'} element={<div>Ошибка</div>} />
         </Routes>
