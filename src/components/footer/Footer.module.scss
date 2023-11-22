@@ -6,13 +6,18 @@
     font-size: 11px;
 
     justify-self: flex-end !important;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 651px) {
         text-align: center;
+        max-width: none;
     }
 
 
     p {
         margin-bottom: 20px;
+        @media screen and (max-width: 651px) {
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
 
         a {
             color: rgb(85, 85, 85);
