@@ -1,31 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useHref } from 'react-router-dom';
+import { Link, useHref, useParams } from 'react-router-dom';
 import { navigateConstant } from '../../data/navigate-constant';
 import { ItemNavigation } from './item-navigation/ItemNavigation';
 import style from './Heade.module.scss';
 import logo from '../../img/2019-09-30-logo_TO_2019.png';
-import { updateTitleTag } from '../../utils/update-title-tag';
+import { usePageIdParamsHook } from '../../hooks/use-page-id-params.hook';
 
 export const Header = () => {
-  const [windowWeight, setWindowWight] = useState(window.innerWidth);
-  const [adaptiveFlag, setAdaptiveFlag] = useState(false);
   const [isHiddenMenu, setIsHiddenMenu] = useState(false);
-  const [namePage, setNamePage] = useState('');
-
-  const pageURL = useHref();
-
-  useEffect(() => {
-    if (windowWeight <= 650) {
-      setAdaptiveFlag(true);
-    }
-
-    navigateConstant.forEach(({ text, link }) => {
-      if (link === pageURL) {
-        setNamePage(text);
-        updateTitleTag(text);
-      }
-    });
-  }, [pageURL]);
+  const { adaptiveFlag, namePage, pageURL } = usePageIdParamsHook();
 
   const onClickForBurger = () => {
     setIsHiddenMenu((pre) => !pre);

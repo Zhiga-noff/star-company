@@ -13,7 +13,7 @@ export const PreviewArticle = ({ article }) => {
         </h2>
 
         <p className={style.description}>
-          Опубликовано <Link to={datePublished.link}>{datePublished.date}</Link> Автор:
+          Опубликовано <Link to={`${id}`}>{datePublished}</Link> Автор:
           <Link to={author.link}> {author.name}</Link>
         </p>
         <p className={style.text}>{text}</p>

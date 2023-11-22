@@ -20,7 +20,7 @@ export const ArticlePage = () => {
       <div className={style.preview}>
         <h1 className={style.title}>{title}</h1>
         <p className={style.description}>
-          Опубликовано <Link to={datePublished.link}>{datePublished.date}</Link> Автор:
+          Опубликовано <Link to={`${id}`}>{datePublished}</Link> Автор:
           <Link to={author.link}> {author.name}</Link>
         </p>
         <p className={style.text}>{text}</p>

@@ -5,10 +5,7 @@ export const articleInfo = [
     id: generateRandomId(10),
     title:
       'Сведения о проведение специальной оценки условий труда в АО «ТО «Красная звезда» в 2023 году',
-    datePublished: {
-      date: 'Ноябрь 13, 2023',
-      link: '',
-    },
+    datePublished: 'Ноябрь 13, 2023',
     author: {
       name: 'admin',
       link: '',
@@ -29,10 +26,7 @@ export const articleInfo = [
     id: generateRandomId(10),
     title:
       'Сведения о проведение специальной оценки условий труда в АО «ТО «Красная звезда» в 2023 году',
-    datePublished: {
-      date: 'Ноябрь 13, 2023',
-      link: '',
-    },
+    datePublished: 'Ноябрь 13, 2023',
     author: {
       name: 'admin',
       link: '',
@@ -45,18 +39,15 @@ export const articleInfo = [
       },
     ],
     file: [
-      { fileURL: '', fileName: '' },
-      { fileURL: '', fileName: '' },
+      { fileURL: '', fileName: 'СОУТ 2023' },
+      { fileURL: '', fileName: 'Перечень рекомендуемых мероприятий' },
     ],
   },
   {
     id: generateRandomId(10),
     title:
       'Сведения о проведение специальной оценки условий труда в АО «ТО «Красная звезда» в 2023 году',
-    datePublished: {
-      date: 'Ноябрь 13, 2023',
-      link: '',
-    },
+    datePublished: 'Ноябрь 13, 2023',
     author: {
       name: 'admin',
       link: '',
@@ -69,18 +60,15 @@ export const articleInfo = [
       },
     ],
     file: [
-      { fileURL: '', fileName: '' },
-      { fileURL: '', fileName: '' },
+      { fileURL: '', fileName: 'СОУТ 2023' },
+      { fileURL: '', fileName: 'Перечень рекомендуемых мероприятий' },
     ],
   },
   {
     id: generateRandomId(10),
     title:
       'Сведения о проведение специальной оценки условий труда в АО «ТО «Красная звезда» в 2023 году',
-    datePublished: {
-      date: 'Ноябрь 13, 2023',
-      link: '',
-    },
+    datePublished: 'Ноябрь 13, 2023',
     author: {
       name: 'admin',
       link: '',
@@ -93,18 +81,15 @@ export const articleInfo = [
       },
     ],
     file: [
-      { fileURL: '', fileName: '' },
-      { fileURL: '', fileName: '' },
+      { fileURL: '', fileName: 'СОУТ 2023' },
+      { fileURL: '', fileName: 'Перечень рекомендуемых мероприятий' },
     ],
   },
   {
     id: generateRandomId(10),
     title:
       'Сведения о проведение специальной оценки условий труда в АО «ТО «Красная звезда» в 2023 году',
-    datePublished: {
-      date: 'Ноябрь 13, 2023',
-      link: '',
-    },
+    datePublished: 'Ноябрь 13, 2023',
     author: {
       name: 'admin',
       link: '',
@@ -117,18 +102,15 @@ export const articleInfo = [
       },
     ],
     file: [
-      { fileURL: '', fileName: '' },
-      { fileURL: '', fileName: '' },
+      { fileURL: '', fileName: 'СОУТ 2023' },
+      { fileURL: '', fileName: 'Перечень рекомендуемых мероприятий' },
     ],
   },
   {
     id: generateRandomId(10),
     title:
       'Сведения о проведение специальной оценки условий труда в АО «ТО «Красная звезда» в 2023 году',
-    datePublished: {
-      date: 'Ноябрь 13, 2023',
-      link: '',
-    },
+    datePublished: 'Ноябрь 13, 2023',
     author: {
       name: 'admin',
       link: '',
@@ -141,8 +123,8 @@ export const articleInfo = [
       },
     ],
     file: [
-      { fileURL: '', fileName: '' },
-      { fileURL: '', fileName: '' },
+      { fileURL: '', fileName: 'СОУТ 2023' },
+      { fileURL: '', fileName: 'Перечень рекомендуемых мероприятий' },
     ],
   },
 ];
